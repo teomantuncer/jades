@@ -1,0 +1,122 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--size: 300px;
+}
+
+html.rtl {
+	direction: rtl;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-width: 320px;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, black, #8d0304);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 600px;
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+
+img.logo {
+	width: 200px;
+	margin: 2rem auto 2rem;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.form-control {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+.form-control label {
+	font-weight: 300;
+	margin-bottom: 0;
+}
+.form-control input, .form-control textarea {
+	padding: .75rem .5rem;
+	border: none;
+	border-radius: 4px;
+	background: #fff;
+	color: #000;
+	font-size: 1rem;
+}
+.form-control input:focus {
+	outline: none;
+}
+h1 {
+	font-size: 1rem;
+	font-style: italic;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 2rem;
+	margin-top: 0;
+}
+.buttons {
+	display: flex;
+	width: 100%;
+	align-content: space-between;
+	justify-content: space-between;
+}
+button {
+	background: linear-gradient(to bottom,black,#8d0304);
+	font-weight: bolder;
+	font-style: italic;
+	margin-bottom: 2rem;
+	margin-right: 1rem;
+	padding: .5rem 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	cursor: pointer;
+	white-space: nowrap;
+	flex: 1;
+}
+button:last-child {
+	margin-right: 0;
+}
+.rtl button {
+	margin-right: 0;
+	margin-left: 1rem;
+}
+.rtl button:last-child {
+	margin-left: 0;
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+}
